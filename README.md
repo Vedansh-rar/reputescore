@@ -7,9 +7,7 @@ Stake-weighted reputation system on Stellar. Endorse any wallet by locking XLM b
 | | |
 |---|---|
 | **Frontend** | `https://reputescore.vercel.app` |
-| **GitHub** | `https://github.com/YOUR_USERNAME/reputescore` |
-| **Contract** | `https://stellar.expert/explorer/testnet/contract/CONTRACT_ID` |
-| **Proof TX** | `https://stellar.expert/explorer/testnet/tx/TX_HASH` |
+| **Contract** | `https://stellar.expert/explorer/testnet/contract/CB3XN6UMXAEUMWZABI6STLYAOKZF6U7DG243IFPCFIFJSDUG76BUHOKR` |
 
 ## Score Tiers
 
