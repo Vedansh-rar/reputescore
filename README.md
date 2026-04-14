@@ -7,7 +7,7 @@ Stake-weighted reputation system on Stellar. Endorse any wallet by locking XLM b
 | | |
 |---|---|
 | **Frontend** | `https://reputescore.vercel.app` |
-| **Contract** | `https://stellar.expert/explorer/testnet/contract/CB3XN6UMXAEUMWZABI6STLYAOKZF6U7DG243IFPCFIFJSDUG76BUHOKR` |
+| **Contract** | `https://stellar.expert/explorer/testnet/contract/CBEMWRSSPW76ZFM5P6F4U6DACUUPV3QTZNM3UEGUOK7EZ34II3U4UNR3` |
 
 ## Score Tiers
 
@@ -26,6 +26,16 @@ Stake-weighted reputation system on Stellar. Endorse any wallet by locking XLM b
 4. Revoke at any time — XLM returned, score reduced
 5. Score is always live: `score = Σ(all active endorsement stakes)`
 
+## Why This Project Matters
+
+This project turns a familiar real-world workflow into a verifiable on-chain primitive on Stellar: transparent state transitions, user-authenticated actions, and deterministic outcomes.
+
+## Architecture
+
+- **Smart Contract Layer**: Soroban contract enforces business rules, authorization, and state transitions.
+- **Client Layer**: React + Vite frontend handles wallet UX, transaction composition, and real-time status views.
+- **Wallet/Auth Layer**: Freighter signs every state-changing action so operations are attributable and non-repudiable.
+- **Infra Layer**: Stellar Testnet + Soroban RPC for execution; Vercel for frontend hosting.
 ## Contract Functions
 
 ```rust
@@ -56,3 +66,5 @@ total_endorsements() -> u64
 chmod +x scripts/deploy.sh && ./scripts/deploy.sh
 cd frontend && npm install && npm run dev
 ```
+
+
